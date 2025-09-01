@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/applied-ml-systems/static/css/main.839cea6a.css",
+    "main.js": "/applied-ml-systems/static/js/main.9263e301.js",
+    "static/js/453.523bd3eb.chunk.js": "/applied-ml-systems/static/js/453.523bd3eb.chunk.js",
+    "index.html": "/applied-ml-systems/index.html",
+    "main.839cea6a.css.map": "/applied-ml-systems/static/css/main.839cea6a.css.map",
+    "main.9263e301.js.map": "/applied-ml-systems/static/js/main.9263e301.js.map",
+    "453.523bd3eb.chunk.js.map": "/applied-ml-systems/static/js/453.523bd3eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.839cea6a.css",
+    "static/js/main.9263e301.js"
+  ]
+}
