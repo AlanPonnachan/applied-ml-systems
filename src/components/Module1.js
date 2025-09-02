@@ -9,9 +9,9 @@ const Module1 = () => {
       
       <hr/>
 
-      {/* The single, combined SVG for the entire module */}
+      {/* CORRECTED WAY to call the SVG */}
       <img 
-        src="./svgs/module_1_foundations.svg" 
+        src={`${process.env.PUBLIC_URL}/img/module1.svg`} 
         alt="A diagram covering the fundamentals of the production ML mindset" 
         className="topic-svg" 
       />

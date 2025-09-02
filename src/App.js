@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-// Import your components
+// Import all your components
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Module1 from './components/Module1';
@@ -13,10 +13,21 @@ import Module5 from './components/Module5';
 import References from './components/References';
 
 function App() {
+  // State to manage whether the sidebar is open or closed.
+  // It starts as 'true' (open).
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
+
+  // This function is passed to the sidebar to let it change the state.
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <Router>
-      <div className="app-container">
-        <Sidebar />
+      <div className={`app-container ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+        
+        <Sidebar isOpen={isSidebarOpen} toggle={toggleSidebar} />
+        
         <main className="content-container">
           <Routes>
             <Route path="/" element={<Home />} />
