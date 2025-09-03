@@ -9,7 +9,6 @@ const Module1 = () => {
       
       <hr/>
 
-      {/* CORRECTED WAY to call the SVG */}
       <img 
         src={`${process.env.PUBLIC_URL}/img/module1.svg`} 
         alt="A diagram covering the fundamentals of the production ML mindset" 
@@ -18,12 +17,16 @@ const Module1 = () => {
 
       <hr/>
       
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <span style={{ color: '#ccc' }}>&lt;&lt; Previous Module</span>
-        <Link to="/module2">Next Module &gt;&gt;</Link>
+      <div className="module-navigation">
+        {/* Grayed out "previous" button for the first module */}
+        <span className="nav-link-disabled">&larr; Previous Module</span>
+        <Link to="/module2" className="nav-link">
+          Module 2: Development <span>&rarr;</span>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default Module1;
+

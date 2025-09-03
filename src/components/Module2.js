@@ -9,18 +9,23 @@ const Module2 = () => {
       
       <hr/>
 
-      {/* You just change the filename here */}
+      {/* This will display your combined SVG for the entire module */}
       <img 
-        src="/img/module2.svg" 
+        src={`${process.env.PUBLIC_URL}/img/module2.svg`} 
         alt="Diagrams explaining the data, feature engineering, and model training process" 
         className="topic-svg" 
       />
 
       <hr/>
       
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Link to="/module1">&lt;&lt; Previous Module</Link>
-        <Link to="/module3">Next Module &gt;&gt;</Link>
+      {/* NEW & IMPROVED NAVIGATION */}
+      <div className="module-navigation">
+        <Link to="/module1" className="nav-link">
+          <span>&larr;</span> Module 1: The Mindset
+        </Link>
+        <Link to="/module3" className="nav-link">
+          Module 3: Deployment <span>&rarr;</span>
+        </Link>
       </div>
     </div>
   );

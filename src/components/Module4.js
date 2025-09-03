@@ -1,29 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Module1 = () => {
+const Module4 = () => {
   return (
     <div>
-      <h1>Module 1: The Production Mindset</h1>
-      <p>This module establishes why production ML is a different discipline from theoretical ML, covering its fundamental nature, the components of a full system, its iterative lifecycle, and common reasons for project failure.</p>
+      <h1>Module 4: Operations: Life in Production</h1>
+      <p>This module covers the "day two" problems of keeping an ML system alive and effective, focusing on monitoring, handling data drift, continual learning, and safe production testing.</p>
       
       <hr/>
 
-      {/* The single, combined SVG for the entire module */}
       <img 
-        src="./svgs/module_1_foundations.svg" 
-        alt="A diagram covering the fundamentals of the production ML mindset" 
+        src={`${process.env.PUBLIC_URL}/img/module4.svg`} 
+        alt="Diagrams covering ML operations like monitoring and continual learning" 
         className="topic-svg" 
       />
 
       <hr/>
       
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <span style={{ color: '#ccc' }}>&lt;&lt; Previous Module</span>
-        <Link to="/module2">Next Module &gt;&gt;</Link>
+      <div className="module-navigation">
+        <Link to="/module3" className="nav-link">
+          <span>&larr;</span> Module 3: Deployment
+        </Link>
+        <Link to="/module5" className="nav-link">
+          Module 5: The Ecosystem <span>&rarr;</span>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default Module1;
+export default Module4;

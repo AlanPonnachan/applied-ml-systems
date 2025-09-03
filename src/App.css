@@ -107,13 +107,64 @@ body {
   width: 60px;
 }
 
-/* ========== MODIFIED SVG STYLING ========== */
+
 .topic-svg {
   width: 100%; /* Make the SVG take the full width of its container */
-  /* max-width: 1000px;  <-- We have removed this line */
   display: block;
   margin: 20px auto 40px auto;
   border: 1px solid #eaeaea;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+.module-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaeaea;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Adds space between the arrow and text */
+  padding: 12px 24px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #f7f7f7;
+  border-color: #bbb;
+}
+
+.nav-link span {
+  font-size: 1.5em; /* Makes the arrow icon larger */
+  line-height: 1;
+}
+
+.nav-link-disabled {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 12px 24px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  color: #aaa; /* Grayed out text */
+  font-weight: 500;
+  font-size: 1.1em;
+  cursor: not-allowed; /* Shows a 'not allowed' cursor on hover */
+}
+
+.nav-link-disabled span {
+  font-size: 1.5em;
+  line-height: 1;
 }

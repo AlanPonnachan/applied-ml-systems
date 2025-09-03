@@ -1,22 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const References = () => {
   return (
-    <div>
-      <h1>References & Acknowledgements</h1>
-      <p>This entire project is a visual synthesis and interpretation of the incredible work from the following authors and their books. I highly recommend reading them for a complete understanding.</p>
+    <div className="page-content">
+      <div className="page-header">
+        <h1>References & Acknowledgements</h1>
+        <p className="page-intro">
+          This entire project is a visual synthesis and interpretation of the incredible work from the following authors. I highly recommend reading their original books for a complete and nuanced understanding.
+        </p>
+      </div>
+
+      <h2>Primary Sources</h2>
+      <div className="card-container">
+        <a href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/" target="_blank" rel="noopener noreferrer" className="card">
+          <h3>Designing Machine Learning Systems</h3>
+          <p>by Chip Huyen (O'Reilly, 2022)</p>
+        </a>
+        <a href="http://www.mlebook.com/" target="_blank" rel="noopener noreferrer" className="card">
+          <h3>Machine Learning Engineering</h3>
+          <p>by Andriy Burkov (True Positive Inc., 2020)</p>
+        </a>
+      </div>
       
-      <h3>Primary Sources:</h3>
-      <ul>
-        <li>
-          <strong>Designing Machine Learning Systems</strong><br/>
-          <em>by Chip Huyen (O'Reilly, 2022)</em>
-        </li>
-        <li>
-          <strong>Machine Learning Engineering</strong><br/>
-          <em>by Andriy Burkov (True Positive Inc., 2020)</em>
-        </li>
-      </ul>
+      <hr/>
+
+      <div className="module-navigation">
+        <Link to="/module5" className="nav-link">
+          <span>&larr;</span> Module 5: The Ecosystem
+        </Link>
+        <span className="nav-link-disabled">End of Guide</span>
+      </div>
     </div>
   );
 };
