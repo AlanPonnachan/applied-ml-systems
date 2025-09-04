@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/applied-ml-systems/static/css/main.b013fd90.css",
-    "main.js": "/applied-ml-systems/static/js/main.8f0447e7.js",
+    "main.css": "/applied-ml-systems/static/css/main.fe730025.css",
+    "main.js": "/applied-ml-systems/static/js/main.ef06fa1d.js",
     "static/js/453.523bd3eb.chunk.js": "/applied-ml-systems/static/js/453.523bd3eb.chunk.js",
     "index.html": "/applied-ml-systems/index.html",
-    "main.b013fd90.css.map": "/applied-ml-systems/static/css/main.b013fd90.css.map",
-    "main.8f0447e7.js.map": "/applied-ml-systems/static/js/main.8f0447e7.js.map",
+    "main.fe730025.css.map": "/applied-ml-systems/static/css/main.fe730025.css.map",
+    "main.ef06fa1d.js.map": "/applied-ml-systems/static/js/main.ef06fa1d.js.map",
     "453.523bd3eb.chunk.js.map": "/applied-ml-systems/static/js/453.523bd3eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b013fd90.css",
-    "static/js/main.8f0447e7.js"
+    "static/css/main.fe730025.css",
+    "static/js/main.ef06fa1d.js"
   ]
 }
