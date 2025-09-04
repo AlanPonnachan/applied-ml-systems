@@ -26,7 +26,7 @@ const Home = () => {
       <h2>About the Project</h2>
       <div className="card-grid">
         <a
-          href="https://github.com/YOUR_USERNAME/applied-ml-systems"
+          href="https://github.com/AlanPonnachan/applied-ml-systems"
           target="_blank"
           rel="noopener noreferrer"
           className="card"
@@ -45,7 +45,7 @@ const Home = () => {
         <h2>About the Author</h2>
         <div className="card-grid">
           <a
-            href="https://github.com/YOUR_USERNAME"
+            href="https://github.com/AlanPonnachan/"
             target="_blank"
             rel="noopener noreferrer"
             className="card"
@@ -54,7 +54,7 @@ const Home = () => {
             <p>See my other projects and contributions.</p>
           </a>
           <a
-            href="https://twitter.com/YOUR_TWITTER_HANDLE"
+            href="https://x.com/alan_ponnachan"
             target="_blank"
             rel="noopener noreferrer"
             className="card"
